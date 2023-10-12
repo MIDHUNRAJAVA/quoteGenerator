@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Quote Generator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="navbar">
+        <h1 id="heading">RANDOM QUOTE GENERATOR</h>
+      </div>
+       <div class="wrapper">
+         <div class="container">
+        <div class="button-container">
+          <button id="favourite"><i class="fa-regular fa-heart"></i></button>
+       <button id="show-list"><i class="fa-solid fa-list"></i></button>
+        <button id="copy"><i class="fa-solid fa-copy"></i></button>
+        <button id="read-aloud"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+      </div>
+      <div>
+      <p id="quote">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas,
+        magni.
+      </p></div>
+        <div id="author">
+          <h3>Lorem, ipsum.</h3>
+        </div>
+      <button id="btn">Generate another quote</button>
+      </div>
+  </div>
+  <div class="favorite-container">
+    <h3 style="color: black;">Favorite Quotes</h3>
+    <ul id="list-of-favourite-quotes" style="color: rgb(0, 0, 0);"></ul>
+    <button id="clear-button">Clear</button>
+    <button id="close-favorite">Close</button>
+  </div>
+  
+  <div class="message" id="copy-message">COPIED TO CLIPBOARD</div>
+  <div id="google_translate_element"></div>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+   <script src="./script.js"></script>
+ <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+</body>
+</html>

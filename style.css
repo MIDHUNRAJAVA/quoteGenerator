@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body {
+    /* background-color: #f7f7ff; */
+      /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+      /* background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%); */
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      /* background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%); */
+      background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  }
+.navbar {
+  background-color: white;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Add this line */
+  z-index: 2; /* Add this line to ensure the navbar is displayed above other elements */
+}
+.button-container button i{
+  color: black;
+  font-size: 20px;
+}
+.button-container button.active i {
+  color: red !important;
+}
+
+
+
+.navbar h2 {
+  color: black;
+  margin: 0;
+  font-size: 16px;
+}
+
+  .wrapper,
+  .favorite-container {
+    width: min(500px, 90%);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 5em 3em;
+    box-shadow: 5px 5px 40px 5px rgba(13, 13, 13, 0.538);
+    border-radius: 1em;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    /* background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%); */
+  }
+  .favorite-container{
+    margin: 0px ;
+  }
+  .container {
+    text-align: center;
+  }
+  #heading{
+  text-align: center;
+  padding: 100px 100px 100px 100px ;  
+  /* margin-bottom: 500px; */
+  }
+  #quote {
+  color: black;
+  margin-top: 50px;
+  border: 4px solid white; 
+  border-radius: 20px;
+  padding: 30px 30px 30px 30px;
+}
+
+#author{
+  color: black;
+  padding-right: -20px;
+}
+  .container p {
+    color: #d6d6d6;
+    margin: 1em 0 1.5em 0;
+  }
+  .container h3 {
+    color: #ffffff;
+  }
+  #favourite ,#show-list,#copy,#read-aloud,#btn{
+    cursor: pointer;
+  }
+  .wrapper #btn,
+  .favorite-container button {
+    background-color: #ffffff;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 3em;
+    margin-top: 4em;
+      }
+  .button-container {
+    display: flex;
+    justify-content: end;
+    gap: 1em;
+  }
+  
+  .button-container button {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  
+  .favorite-container h3 {
+    color: #ffffff;
+  }
+  .favorite-container ul {
+    list-style: none;
+    color: #d6d6d6;
+  }
+  .favorite-container li {
+    padding: 1em 0;
+  }
+  .active {
+    color: red;
+  }
+  .message {
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.358);
+    color: white;
+    padding: 0.5em 1em; /* Smaller padding values */
+    border-radius: 5px;
+    display: none; /* Initially hidden */
+  }
+  
+ /* Add responsive design */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+    padding: 2em;
+  }
+
+  .container {
+    padding: 2em;
+  }
+
+  #heading {
+    padding: 2em;
+  }
+}
+/* Position the Google Translate element at the bottom-left corner */
+#google_translate_element {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+}
